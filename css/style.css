@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1c1c1c;
+}
+#container{       
+    margin: 0 15px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid #e3d475 ;
+}
+img{    
+    max-width: 100%;
+    border: 4px inset white;
+    margin: 20px 0;
+    border-radius: 3px;    
+}
+
+header{
+    display: flex;    
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+h1, form ul li{
+    color: #e3d475;
+}
+h2,h3, header span{
+    color: white;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+p{
+    color: rgb(206, 206, 206);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+}
+
+nav{
+    background-color: grey;    
+}
+
+nav ul{
+list-style-type: none;
+display: flex;
+justify-content: first baseline;
+}
+
+nav ul li {
+padding: 10px;
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid yellow;   
+}
+
+a{
+    text-decoration-line: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* cuerpo*/
+
+main{
+    margin: 0 13px;
+    padding: 30px 0;   
+}
+
+.cabezera h2{
+    text-align: center;    
+}
+
+section:nth-of-type(2){
+   padding: 0 60px;   
+}
+
+section:nth-of-type(2), section:nth-of-type(2) div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+     
+}
+
+section:nth-of-type(2) div img{
+    width: 417px;    
+} 
+
+h2, h3,figure, form{
+    padding: 20px 0;
+}
+
+figure~p{
+    text-align: center;
+}
+
+section:nth-of-type(3){
+    padding-bottom: 100px;
+    border-bottom: 1px solid grey ;
+}
+
+section:nth-of-type(1), section:nth-of-type(2){
+    padding: 40px 0;  
+    border-bottom: 1px solid grey ;
+}
+
+/*formulario*/
+
+form{
+    position: relative;
+}
+
+form ul{
+   list-style-type: none;   
+   
+}
+form ul li {
+    padding: 5px;    
+}
+
+form ul li label{
+    padding-right: 30px;    
+}
+
+form ul li span{
+    display: block;    
+}
+
+form ul li:last-of-type{
+display: flex;
+padding-top: 22px;
+}
+
+form ul li:last-of-type label{
+    padding-right: 19px;
+}
+
+input{
+    width: 69%;
+    padding-left: 5px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+textarea{
+    height: 80px;
+    width: 69%;
+    padding-left: 5px;
+    padding-top: 3px;
+    border-radius: 5px;
+}
+
+button{
+    position: absolute;
+    bottom: -40px;
+    left: 85px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #e3d475;
+    cursor: pointer;
+}
+
+/*media queries*/
+
+@media (min-width: 480px){
+    header{         
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    .cabezera{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
+ 
+
+    section:nth-of-type(2) div{
+        width: 60%;        
+    }
+
+}
+
+@media (min-width: 767.98px){
+    section:nth-of-type(2){
+        flex-direction: row;                            
+        justify-content: space-between;      
+    }  
+
+    section:nth-of-type(2) div{
+        width: 100%;
+        height: 100vh;
+        padding: 0 20px;
+    }
+
+    section:nth-of-type(2) div:last-of-type img{
+        width: 96.5%;        
+    }
+
+    section:nth-of-type(3){
+        display: flex;        
+    }
+    section:nth-of-type(3) div{
+        width: 45%;
+    }
+
+    section:nth-of-type(3) div:last-of-type{
+        padding: 13px 0 0 20px;
+    }
+
+}
